@@ -1,2 +1,3 @@
-./build.sh
 ./compile.sh
+./build.sh
+ls apps
