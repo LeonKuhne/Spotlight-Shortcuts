@@ -4,7 +4,7 @@ name, browser, url
 vim urls.csv
 ```
 
-# 2. Build Scripts
+# 2. Build Apps
 ```
 ./run.sh
 ```
