@@ -1,6 +1,6 @@
 # 1. Add Bookmarks
 ```
-# name | browser | url 
+name, browser, url 
 vim urls.csv
 ```
 
