@@ -5,7 +5,7 @@ OUTPUT_DIR="build"
 rm -r "$OUTPUT_DIR"
 mkdir "$OUTPUT_DIR"
 
-# parse the yml
+# parse the config
 while read -r line; do
 
   # parse the line
@@ -21,4 +21,4 @@ end tell"
 
   echo -e "$script" > "$OUTPUT_DIR/$name.scpt"
 
-done < urls.yml 
+done < urls.csv 

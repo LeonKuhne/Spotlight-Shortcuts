@@ -1,6 +1,5 @@
 .cd
 
-urls.yml
 apps/*
 build/*
 
