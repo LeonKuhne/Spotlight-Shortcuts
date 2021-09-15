@@ -9,7 +9,13 @@ vim urls.csv
 ./run.sh
 ```
 
-# 3. Contribute
+# 3. Enjoy
+```
+open spotlight
+search for bookmark names
+```
+
+# 4. Contribute
 ```
 Todo
 - use json config and parse with jq instead of csv
