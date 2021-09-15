@@ -16,7 +16,8 @@ while read -r line; do
   # set the url
   script="\
 tell application \"$app\"
-\topen location \"$url\"
+  activate
+  open location \"$url\"
 end tell"
 
   echo -e "$script" > "$OUTPUT_DIR/$name.scpt"
