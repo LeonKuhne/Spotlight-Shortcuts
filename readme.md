@@ -1,12 +1,17 @@
 # 1. Add Bookmarks
-
+```
+# name | browser | url 
+vim urls.csv
+```
 
 # 2. Build Scripts
 ```
-./build.sh
+./run.sh
 ```
 
-# 2. Compile Apps
+# 3. Contribute
 ```
-./compile.sh
+Todo
+- use json config and parse with jq instead of csv
+- make the browser optional and add a default
 ```
