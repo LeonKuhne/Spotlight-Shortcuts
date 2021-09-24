@@ -1,4 +1,5 @@
 #!/bin/bash
+source config.sh
 
 # setup dir
 OUTPUT_DIR="build"
@@ -10,9 +11,16 @@ while read -r line; do
 
   # parse the line
   name="$(cut -d ',' -f 1 <<< "$line" | xargs)"
-  app="$(cut -d ',' -f 2 <<< "$line" | xargs)"
-  url="$(cut -d ',' -f 3- <<< "$line" | xargs)"
+  url="$(cut -d ',' -f 2 <<< "$line" | xargs)"
+  app=$SPOTLIGHT_DEFAULT_BROWSER
 
+  # optionally, use specified browser 
+  optional="$(cut -d ',' -f 3- <<< "$line" | xargs)"
+  if [ ! -z "$optional" ]; then
+    app=$url
+    url=$optional
+  fi
+  
   # set the url
   script="\
 tell application \"$app\"
