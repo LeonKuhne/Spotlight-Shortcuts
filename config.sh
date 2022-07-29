@@ -1,4 +1,4 @@
 #!/bin/bash
 
 SPOTLIGHT_DEFAULT_BROWSER="Firefox Developer Edition"
-SPOTLIGHT_SHORTCUT_PREFIX="open"
+SPOTLIGHT_SHORTCUT_PREFIX="visit"
