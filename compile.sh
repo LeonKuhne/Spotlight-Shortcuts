@@ -1,8 +1,7 @@
 #!/bin/bash
-source config.sh
 
 # setup dir
-OUTPUT_DIR="build"
+OUTPUT_DIR="$SPOTLIGHT_SEARCH_DIR/build"
 rm -r "$OUTPUT_DIR"
 mkdir "$OUTPUT_DIR"
 
@@ -30,4 +29,4 @@ end tell"
 
   echo -e "$script" > "$OUTPUT_DIR/$name.scpt"
 
-done < urls.csv 
+done < "$SPOTLIGHT_SEARCH_DIR/urls.csv" 

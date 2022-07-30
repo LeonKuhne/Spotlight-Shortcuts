@@ -1,6 +1,5 @@
 #!/bin/bash
+source config.sh
 
-script_dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-
-vim $script_dir/urls.csv
-. $script_dir/run.sh
+vim $SPOTLIGHT_SEARCH_DIR/urls.csv
+. $SPOTLIGHT_SEARCH_DIR/run.sh
